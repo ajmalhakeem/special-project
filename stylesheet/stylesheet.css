@@ -3,6 +3,10 @@
   -moz-border-radius: 0 !important;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-brand img {
   width: 50px;
   height: 43.6px;
@@ -12,6 +16,38 @@ a.navbar-brand {
   padding-top: 4px;
 }
 
-.jumbotron .center {
+.jumbotron {
+    background-image: url("../images/bg.jpg");
+    background-color: #17234E;
+    margin-bottom: 0;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 450px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron h1, p {
+  color: white;
+}
+
+.center {
   text-align: center;
+}
+
+.main-info p {
+  color: black;
+}
+
+.main-info {
+  padding-top: 30px;
 }
